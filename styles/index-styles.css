@@ -1,0 +1,99 @@
+*{
+ padding: 0%;
+ margin: 0%;
+ box-sizing: border-box;
+ background-color: white;
+ display: grid;
+ grid-template-columns: 100%;
+ font-family:monospace ;
+ 
+ 
+}
+
+#navegacion-lista{
+   display: flex;
+   height: 10%;
+   width: 100%;
+   background-color: white;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   font-family: monospace;   
+   position: fixed;
+   border-bottom: 1px solid lightgray;
+   z-index: 10;
+}
+.navegacion-lista-elemento{
+   font-size: 17px;
+   margin-right: 10%;
+   display: inline-block;
+   background: none;
+   color:  #162846;
+}
+#contacto-boton-nav{
+  background-color: #162846;
+  color: white;
+  padding: 1%;
+  border-radius: 2%;
+  
+}
+#contacto-boton-nav:hover{
+   background-color:  rgb(255, 145, 0);
+
+
+}
+#inicio{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   height: 100%;
+   background-image: url("../pexels-kampus-production-8439656.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   object-fit: contain;
+   
+}
+#titulo{
+   background-color: none;
+   font-size: 35px;
+   text-align: center;
+   color: white;
+   display: inline-block;
+   margin: 20%;
+   text-align: center; 
+   background: none; 
+   position:relative;
+   text-shadow: 1px 1px 2px black;;
+    
+}
+#Contacto-boton{
+   position:relative;
+   top: -20%;
+   padding: 20px;
+   background-color: #162846;
+   border: none;
+   color: white;
+}
+#quienes-somos{
+   padding-left: 10%;
+   flex-direction: row-reverse;
+   align-items: flex-start;
+   justify-content: space-around;
+   display: flex;
+   height: 400px;
+   width: 100%;
+   background-image: url("/contabilidad-una-aproximacion-conceptual.jpg");
+   
+   
+}
+#quienes-somos-titulo{
+   color: darkorange;
+   font-size: 40px;
+   font-weight: 100;
+   align-items: flex-start;
+}
+
+
+
