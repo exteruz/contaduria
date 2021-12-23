@@ -1,3 +1,7 @@
+:root{
+--secondary-color: #D9430D;
+--blue-primary: #162846;
+}
 *{
  padding: 0%;
  margin: 0%;
@@ -5,7 +9,7 @@
  background-color: white;
  display: grid;
  grid-template-columns: 100%;
- font-family:monospace ;
+ font-family: 'Lato', sans-serif;
  
  
 }
@@ -19,6 +23,7 @@
    align-items: center;
    justify-content: flex-end;
    font-family: monospace;   
+   flex-wrap: wrap;
    position: fixed;
    border-bottom: 1px solid lightgray;
    z-index: 10;
@@ -29,6 +34,24 @@
    display: inline-block;
    background: none;
    color:  #162846;
+   position: relative;
+
+}
+.navegacion-lista-elemento::after{
+   content: "";
+   background-color: var(--secondary-color);
+   position: absolute;
+   left: 0%;
+   top: 100%;
+   width: 100%;
+   height: 3px;
+
+   opacity: 0;
+   transition: opacity 0.5s;
+
+}
+.navegacion-lista-elemento:hover::after{
+   opacity: 0.8;
 }
 #contacto-boton-nav{
   background-color: #162846;
@@ -37,8 +60,12 @@
   border-radius: 2%;
   
 }
+#contacto-boton-nav::after{
+   height: 0%;
+
+}
 #contacto-boton-nav:hover{
-   background-color:  rgb(255, 145, 0);
+   background-color: var(--secondary-color);
 
 
 }
@@ -47,6 +74,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: flex-start;
+   flex-wrap: wrap;
    width: 100%;
    height: 100%;
    background-image: url("../pexels-kampus-production-8439656.jpg");
@@ -72,28 +100,91 @@
    position:relative;
    top: -20%;
    padding: 20px;
-   background-color: #162846;
+   background-color: var(--blue-primary);
    border: none;
    color: white;
 }
+#Contacto-boton:hover{
+   background-color: var(--secondary-color);
+   color: white;
+}
+
 #quienes-somos{
-   padding-left: 10%;
-   flex-direction: row-reverse;
-   align-items: flex-start;
-   justify-content: space-around;
-   display: flex;
-   height: 400px;
    width: 100%;
-   background-image: url("/contabilidad-una-aproximacion-conceptual.jpg");
-   
+   height: 500px;
+   display: flex;
+   flex-direction : row ;
    
 }
+#Container-content{
+   background-color: var(--blue-primary);
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   
+   overflow: hidden;
+}
+
+#container-img{
+ width: 100%;
+ background-color: var(--secondary-color);
+ height: 500px;
+ flex-wrap: wrap;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#Imagen-quien-soy{
+   width: 100%;
+   height: 500px;
+   opacity: 0.6;
+}
+
 #quienes-somos-titulo{
-   color: darkorange;
+   margin-top: 10%;
+   background-color:var(--blue-primary) ;
+   color: var(--secondary-color);
    font-size: 40px;
    font-weight: 100;
    align-items: flex-start;
+   position: relative;
+   letter-spacing: 10px;
 }
+#quienes-somos-titulo::after{
+   content: "";
+   background-color: var(--secondary-color);
+   position: absolute;
+   left: 0%;
+   top: 100%;
+   width: 100%;
+   height: 3px;
+}
+#quien-soy-texto{
+   font-size: 20px;
+   background-color: var(--blue-primary);
+   padding:20px;
+   color: white;
+   line-height:50px;
 
+}
+#boton-quien-soy{
+   font-size: 15px;
+    border: none;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-bottom: 10%;
+    text-align: center;
 
+}
+#boton-quien-soy:hover{
+   background-color: var(--secondary-color);
+   box-shadow: 1px ;
+   transform: scale(1.1);
+   zoom: 100%;
+}
 
