@@ -1,16 +1,15 @@
 :root{
 --secondary-color: #D9430D;
 --blue-primary: #162846;
+--gray-color: #F2F2F2;
 }
 *{
  padding: 0%;
  margin: 0%;
- box-sizing: border-box;
  background-color: white;
  display: grid;
  grid-template-columns: 100%;
  font-family: 'Lato', sans-serif;
- 
  
 }
 
@@ -60,6 +59,10 @@
   border-radius: 2%;
   
 }
+a{
+   background: none;
+}
+
 #contacto-boton-nav::after{
    height: 0%;
 
@@ -93,7 +96,7 @@
    text-align: center; 
    background: none; 
    position:relative;
-   text-shadow: 1px 1px 2px black;;
+   text-shadow: 1px 1px 2px black;
     
 }
 #Contacto-boton{
@@ -142,7 +145,7 @@
    opacity: 0.6;
 }
 
-#quienes-somos-titulo{
+.titulo{
    margin-top: 10%;
    background-color:var(--blue-primary) ;
    color: var(--secondary-color);
@@ -151,8 +154,9 @@
    align-items: flex-start;
    position: relative;
    letter-spacing: 10px;
+   background: none;
 }
-#quienes-somos-titulo::after{
+.titulo::after{
    content: "";
    background-color: var(--secondary-color);
    position: absolute;
@@ -188,3 +192,98 @@
    zoom: 100%;
 }
 
+#servicios{
+   width: 100%;
+   height: 80vh;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   text-align: center;
+   align-items: center;
+   background-image: url("https://images.pexels.com/photos/7693097/pexels-photo-7693097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#servicios-container{
+   display: flex;
+   height: 80vh;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   background-color: #162846;
+   object-fit: cover;
+   opacity: 0.7;
+}
+
+.servicios{
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   display: inline-block;
+   text-align: center; 
+   background: none; 
+   position:relative;
+}
+
+#experiencia-titulo{
+   margin:0;
+   height: 4vh;
+   text-align: center;
+   color: var(--secondary-color);
+   padding: 2%;
+   background-color: var(--blue-primary);
+}
+#experiencia-titulo::after{
+   margin-left: 35%;
+   height: 1%;
+  width: 30%;
+}
+#experiencia{
+   height: 80vh;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-around;
+   justify-items: center;
+   align-items: center;
+   background-color: var(--blue-primary);
+}
+.experiencia-div{
+   height: 70%;
+   width: 25%;
+   color: black;
+   padding-top: 3%;
+   text-align: center;
+   text-align: center;
+   background-color: lightgray;
+   
+}
+.Experiencia-titulo{
+   font-size: 20px;
+   color: var(--secondary-color);
+}
+#pie-pagina{
+   display: flex;
+   width: 100%;
+   height: 20vh;
+   background-color: white;
+   flex-direction: row;
+   margin-top: 5%;
+   justify-content: space-evenly;
+   align-items: baseline;
+}
+.contacto{
+   background-color: var(--secondary-color);
+}
+.texto-pie-pagina{
+   background-color: white;
+}
+.contacto-informacion{
+   text-align: center;
+   padding: 2px;
+}
+.title{
+   color: transparent;
+   background-color: transparent;
+   background: none;
+   width: 0;
+   height: 0;
+}
