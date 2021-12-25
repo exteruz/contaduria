@@ -26,6 +26,11 @@
       border-bottom: 1px solid lightgray;
       z-index: 10;
    }
+   #Imagen-icono{
+      height: 50px;
+      padding-top: 5%;
+      padding-bottom: 5%;
+   }
    .navegacion-lista-elemento{
       font-size: 17px;
       margin-right: 10%;
@@ -558,7 +563,13 @@
          margin: 0px;
          position: relative;
       }
-      .navegacion-lista-elemento:hover{
+      #imagen-menu{
+         background-color: white;
+      }
+      #imagen-menu:target{
+         background-color: white;
+      }
+      .navegacion-lista-elemento:target{
          background-color: var(--blue-primary);
          color: white;
       }
@@ -569,7 +580,12 @@
          border-radius: 0%;
          margin: 0%;
       }
-      #contacto-boton-nav:hover{
+      #imagen-menu:target{
+         background: none;
+         background-color: #D9430D;
+
+      }
+      #contacto-boton-nav:target{
          background-color: var(--blue-primary);
          color: white;
          
