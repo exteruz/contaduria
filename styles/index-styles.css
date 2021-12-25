@@ -11,9 +11,7 @@
     grid-template-columns: 100%;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
-    
    }
-   
    #navegacion-lista{
       display: flex;
       height: 10%;
@@ -27,6 +25,16 @@
       border-bottom: 1px solid lightgray;
       z-index: 10;
    }
+   a{
+      text-decoration: none;
+      color: var(--blue-primary);
+   }
+   a:hover{
+      text-decoration: none;
+   }
+   #contacto-boton-link{
+      color: white;
+   }
    #Imagen-icono{
       height: 50px;
       padding-top: 5%;
@@ -34,6 +42,7 @@
    }
    .navegacion-lista-elemento{
       font-size: 17px;
+      text-decoration: none;
       margin-right: 10%;
       display: inline-block;
       background: none;
