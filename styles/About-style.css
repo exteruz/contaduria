@@ -36,6 +36,14 @@
  a:hover{
     text-decoration: none;
  }
+ a:active{
+    text-decoration: none;
+ }
+ a:link {
+    text-decoration: none;
+
+}
+
  #contacto-boton-link{
     color: white;
  }
