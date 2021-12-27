@@ -32,6 +32,9 @@
    a:hover{
       text-decoration: none;
    }
+   a:active{
+      text-decoration: none;
+   }
    #contacto-boton-link{
       color: white;
    }
@@ -332,18 +335,18 @@
          position: relative;
       }
       .navegacion-lista-elemento:hover{
-         background-color: var(--blue-primary);
-         color: white;
+         background-color: rgb(228, 228, 228);
+         color: white ; 
       }
       #contacto-boton-nav{
-         background-color: white;
+         background-color: var(--blue-primary);
          color: var(--blue-primary);
          padding: 0%;
          border-radius: 0%;
          margin: 0%;
       }
       #contacto-boton-nav:hover{
-         background-color: var(--blue-primary);
+         background-color: var(--secondary-color);
          color: white;
          
       }
@@ -358,6 +361,9 @@
       }
       #Contacto-boton{
          margin-top: 10%;
+      }
+      #Imagen-icono{
+         margin-top: 2%;
       }
       #quienes-somos{
          margin-top: 0%;
@@ -463,7 +469,7 @@
          margin: 0%;
       }
       #contacto-boton-nav:hover{
-         background-color: var(--blue-primary);
+         background-color: rgb(228, 228, 228);
          color: white;
          
       }
@@ -574,29 +580,26 @@
          position: relative;
       }
       #imagen-menu{
+         padding-top: 3%;
+         padding-bottom: 3%;
          background-color: white;
       }
       #imagen-menu:target{
          background-color: white;
       }
-      .navegacion-lista-elemento:target{
-         background-color: var(--blue-primary);
+      .navegacion-lista-elemento:hover{
+         background-color: rgb(228, 228, 228);
          color: white;
       }
       #contacto-boton-nav{
-         background-color: white;
+         background-color: var(--blue-primary);
          color: var(--blue-primary);
          padding: 0%;
          border-radius: 0%;
          margin: 0%;
       }
-      #imagen-menu:target{
-         background: none;
+      #contacto-boton-nav:hover{
          background-color: #D9430D;
-
-      }
-      #contacto-boton-nav:target{
-         background-color: var(--blue-primary);
          color: white;
          
       }
