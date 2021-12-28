@@ -216,54 +216,52 @@
     }
    
     #navegacion-lista{
-       flex-direction: column;
-       height: 40%;
-       width: 100%;
-       justify-content: space-around;
-       align-items: center;
-       text-align: center;
-       position: relative;
-    }
- 
-    .navegacion-lista-elemento{
-       align-items: center;
-       justify-content: space-around;
-       display: flex;
-       background-color: white;
-       width: 100%;
-       height: 25%;
-       padding: 0px;
-       margin: 0px;
-       position: relative;
-    }
-    #imagen-menu{
-       background-color: white;
-       margin-top: 4%;
-    }
-    #imagen-menu:target{
-       background-color: white;
-    }
-    .navegacion-lista-elemento:hover{
-       background-color: rgb(228, 228, 228);
-       color: white;
-    }
-    #contacto-boton-nav{
-       background-color: var(--blue-primary);
-       color: var(--blue-primary);
-       padding: 0%;
-       border-radius: 0%;
-       margin: 0%;
-    }
-    #imagen-menu:target{
-       background: none;
-       background-color: #D9430D;
-
-    }
-    #contacto-boton-nav:target{
-       background-color: var(--blue-primary);
-       color: white;
-       
-    }
+        position: relative;
+        flex-direction: column;
+        height: 50%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+     }
+  
+     .navegacion-lista-elemento{
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 25%;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+     }
+     #imagen-menu{
+         width:20px;
+         height: 20px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: white;
+     }
+     
+     #imagen-menu:target{
+        background-color: white;
+     }
+     .navegacion-lista-elemento:hover{
+        background-color: rgb(228, 228, 228);
+        color: white;
+     }
+     #contacto-boton-nav{
+        background-color: var(--blue-primary);
+        color: var(--blue-primary);
+        padding: 0%;
+        border-radius: 0%;
+        margin: 0%;
+     }
+     #contacto-boton-nav:hover{
+        background-color: #D9430D;
+        color: white;
+        
+     }
     #container{
         padding: 0%;
         margin: 0%;
