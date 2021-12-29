@@ -51,14 +51,14 @@
     padding-bottom: 5%;
  }
  .navegacion-lista-elemento{
+     background-color: #55a288;
     font-size: 17px;
     text-decoration: none;
     margin-right: 10%;
     display: inline-block;
     background: none;
     color:  #162846;
-    
- 
+    position: relative;
  }
  .navegacion-lista-elemento::after{
     content: "";
@@ -120,7 +120,7 @@
 
 }
 #container{
-    padding-top: 13%;
+    padding-top: 10%;
      min-width: 500px;
      min-height: 800px;
      width: 100%;
@@ -159,7 +159,7 @@
  }
  #servicios-container{
      min-width: 425px;
-     min-height: 500px;
+     min-height: 520px;
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: 1fr 1fr;
@@ -172,6 +172,7 @@
      box-shadow: 1px 1px 10px rgb(145, 145, 145);
      
  }
+
  .servicio{
      background-color: none;
      height: 100%;
@@ -186,6 +187,10 @@
      box-shadow: 1px 1px 10px rgb(145, 145, 145);
      border-radius: 10px;
  }
+ 
+  .texto-servicio{
+      margin-left: 5%;
+  }
 
 
 
@@ -220,7 +225,7 @@
     #navegacion-lista{
         position: relative;
         flex-direction: column;
-        height: 60vh;
+        height: 50%;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -308,7 +313,7 @@
 
 
     #titulo{
-        color: white;
+        color: var(--secondary-color);
         -webkit-text-stroke: 2px white;
 
     }
@@ -322,11 +327,10 @@
     }
 
 
-
     #pie-pagina{
         width: 100%;
-        height: 20%;
-        position: absolute;
+        height: 10%;
+        position: relative;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
