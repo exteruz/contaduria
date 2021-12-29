@@ -321,7 +321,7 @@
 
 
     #titulo{
-        color: var(--secondary-color);
+        color: white;
         -webkit-text-stroke: 2px white;
 
     }
